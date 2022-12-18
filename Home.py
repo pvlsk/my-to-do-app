@@ -9,9 +9,11 @@ def add_todo():
 
 todos = f.get_todos()
 
+st.set_page_config(layout="wide")
+
 st.title("My Todo App")
 st.subheader("This is mytodo app.")
-st.write('This app will increase your productivity')
+st.write('This app will increase your <b>productivity</b>', unsafe_allow_html=True)
 
 
 for index, todo in enumerate(todos):
